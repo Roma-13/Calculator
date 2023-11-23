@@ -1,0 +1,34 @@
+body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:350px;
+}
+
+.calculator {
+    text-align: center;
+}
+
+#gamosaxuleba {
+    width:90%;
+    margin-bottom:10px;
+    padding: 10px;
+    font-size:18px;
+    color:blue;
+}
+
+.buttons {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:10px;
+}
+button {
+    padding:10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+button:hover {
+    color:blue;
+    transform: translateY(2px);
+}
