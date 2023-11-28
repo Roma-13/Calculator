@@ -8,27 +8,32 @@
 <body>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <div class="container">
     <div class="calculator">
         <h1>Calculator</h1>
-        <input type="text" placeholder="შეიყვანეთ ციფრი" id="gamosaxuleba">
+        <input type="text" placeholder="0" id="gamosaxuleba">
         <div class="buttons">
-            <button onclick="display('7')">7</button>
-            <button onclick="display('8')">8</button>
-            <button onclick="display('9')">9</button>
-            <button onclick="display('/')">/</button>
-            <button onclick="display('4')">4</button>
-            <button onclick="display('5')">5</button>
-            <button onclick="display('6')">6</button>
-            <button onclick="display('*')">*</button>
-            <button onclick="display('1')">1</button>
-            <button onclick="display('2')">2</button>
-            <button onclick="display('3')">3</button>
-            <button onclick="display('-')">-</button>
-            <button onclick="display('0')">0</button>
-            <button onclick="yvelafrisWashla()">C</button>
-            <button onclick="gamotvla()">=</button>
-            <button onclick="display('+')">+</button>
+            <button class="grey" onclick="yvelafrisWashla('c')">C</button>
+            <button class="grey" onclick="negate('')">+/-</button>
+            <button class="grey" onclick="calculatePercentage('')">%</button>
+            <button class="orange" onclick="display('/')">/</button>
+            <button class="black" onclick="display('7')">7</button>
+            <button class="black" onclick="display('8')">8</button>
+            <button class="black" onclick="display('9')">9</button>
+            <button class="orange" onclick="display('*')">*</button>
+            <button class="black" onclick="display('4')">4</button>
+            <button class="black" onclick="display('5')">5</button>
+            <button class="black" onclick="display('6')">6</button>
+            <button class="orange" onclick="display('-')">-</button>
+            <button class="black" onclick="display('1')">1</button>
+            <button class="black" onclick="display('2')">2</button>
+            <button class="black" onclick="display('3')">3</button>
+            <button class="orange" onclick="display('+')">+</button>
+            <button class="shavi" onclick="display('0')">0</button>
+            <button class="black" onclick="display(',')">,</button>
+            <button class="orange" onclick="gamotvla('=')">=</button>
         </div>
+    </div>
     </div>
 </body>
 </html>
